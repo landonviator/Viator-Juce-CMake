@@ -1,0 +1,6 @@
+[submodule "modules/JUCE"]
+	path = modules/JUCE
+	url = https://github.com/juce-framework/JUCE.git
+[submodule "modules/external/googletest"]
+	path = modules/external/googletest
+	url = https://github.com/google/googletest.git
