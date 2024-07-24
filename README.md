@@ -18,6 +18,30 @@ git submodule update --init
 
 ## Building the Project
 
+If you don't have CMake, you'll need to install it on your machine for your platform.
+
+### MacOS
+
+```bash
+brew install cmake gtk+3
+```
+
+### Windows
+
+I'm so sorry that you have to use Windows :(
+
+```bash
+choco install cmake
+```
+
+### Linux
+
+```bash
+sudo apt-get update
+sudo apt-get install -y build-essential cmake libgtk-3-dev libwebkit2gtk-4.0-dev
+sudo apt-get install -y libasound2-dev
+```
+
 Initialize the CMake project and create a build folder with the following command:
 
 ```bash
