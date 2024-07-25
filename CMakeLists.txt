@@ -86,7 +86,7 @@ target_compile_definitions(SharedCode INTERFACE
         CMAKE_BUILD_TYPE="${CMAKE_BUILD_TYPE}"
         VERSION="${CURRENT_VERSION}"
         JUCE_DISPLAY_SPLASH_SCREEN=0
-        PRODUCT_NAME_WITHOUT_VERSION="viator-monster-channel"
+        PRODUCT_NAME_WITHOUT_VERSION="ViatorJuceCMake"
 )
 
 # Add sources to the main project
