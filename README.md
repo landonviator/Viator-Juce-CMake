@@ -31,7 +31,7 @@ We'll first install Homebrew, a package manager for MacOS. You can either run th
 Then, we use Homebrew to install CMake and another dependency.
 
 ```bash
-brew install cmake gtk+3
+brew install cmake gtk+3 pkg-config
 ```
 
 ### Windows
@@ -57,6 +57,14 @@ sudo apt-get install -y libasound2-dev
 If any of these methods don't work for you to install CMake, just go to [this](https://cmake.org/download/) link to install it from an executable.
 
 ## Building the Project
+
+Navigate to the project folder
+
+```bash
+cd path/to/Viator-Juce-CMake
+```
+
+Or, you could type `cd` into your terminal, drag the Viator-Juce-CMake folder to the terminal, then hit enter.
 
 Initialize the CMake project and create a build folder with the following command:
 
