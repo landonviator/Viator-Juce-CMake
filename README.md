@@ -16,11 +16,19 @@ This ensures that the project is downloaded with the GoogleTest and Juce submodu
 git submodule update --init
 ```
 
-## Building the Project
+## Installing CMake
 
 If you don't have CMake, you'll need to install it on your machine for your platform.
 
 ### MacOS
+
+We'll first install Homebrew, a package manager for MacOS. You can either run the following command or download it from [this](https://brew.sh/) link.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then, we use Homebrew to install CMake and another dependency.
 
 ```bash
 brew install cmake gtk+3
@@ -28,7 +36,9 @@ brew install cmake gtk+3
 
 ### Windows
 
-I'm so sorry that you have to use Windows :(
+You'll need to install Chocolatey, a Windows package manager. You may already have it on your machine from installing other software, but you can follow [this](https://chocolatey.org/install) link to install it explicitly.
+
+Then, we use Chocolatey to install CMake.
 
 ```bash
 choco install cmake
@@ -41,6 +51,12 @@ sudo apt-get update
 sudo apt-get install -y build-essential cmake libgtk-3-dev libwebkit2gtk-4.0-dev
 sudo apt-get install -y libasound2-dev
 ```
+
+### Install Notes
+
+If any of these methods don't work for you to install CMake, just go to [this](https://cmake.org/download/) link to install it from an executable.
+
+## Building the Project
 
 Initialize the CMake project and create a build folder with the following command:
 
