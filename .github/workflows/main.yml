@@ -74,11 +74,17 @@ jobs:
         - name: Run Tests
           run: GTEST_COLOR=1 ctest --test-dir build --output-on-failure -j12
 
-        - name: Archive build artifacts
+        - name: Archive AU build artifacts
           uses: actions/upload-artifact@v3
           with:
             name: build-macos
-            path: Build/Release/
+            path: build/Viator-Juce-CMake_artifacts/AU
+
+        - name: Archive VST3 build artifacts
+          uses: actions/upload-artifact@v3
+          with:
+            name: build-macos
+            path: build/Viator-Juce-CMake_artifacts/VST3
 
     build-linux:
       runs-on: ubuntu-latest
