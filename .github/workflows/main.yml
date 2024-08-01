@@ -1,9 +1,9 @@
 name: Build JUCE Plugin
 
 on:
-  pull_request:
+  push:
     branches:
-      - production
+      - main
 
 jobs:
     build-windows:
