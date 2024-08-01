@@ -41,7 +41,7 @@ jobs:
           uses: actions/upload-artifact@v3
           with:
             name: build-Windows
-            path: Build/Release/
+            path: Build/ViatorJuceCMake_artefacts/Release/VST3
 
     build-macos:
       runs-on: macos-latest
@@ -78,13 +78,13 @@ jobs:
           uses: actions/upload-artifact@v3
           with:
             name: build-macos
-            path: build/Viator-Juce-CMake_artifacts/AU
+            path: Build/ViatorJuceCMake_artefacts/Release/AU
 
         - name: Archive VST3 build artifacts
           uses: actions/upload-artifact@v3
           with:
             name: build-macos
-            path: build/Viator-Juce-CMake_artifacts/VST3
+            path: Build/ViatorJuceCMake_artefacts/Release/VST3
 
     build-linux:
       runs-on: ubuntu-latest
@@ -117,5 +117,5 @@ jobs:
           uses: actions/upload-artifact@v3
           with:
             name: build-linux
-            path: Build/Release/
+            path: Build/ViatorJuceCMake_artefacts/Release/VST3
 
